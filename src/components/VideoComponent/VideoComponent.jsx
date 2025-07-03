@@ -21,7 +21,8 @@ const VideoComponent = () => {
       playsInline
       style={videoStyle}  
     >
-      <source src="src/assets/tech.mp4" type="video/mp4" />
+      <source src="/tech/tech.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
       
     </video>
   );
