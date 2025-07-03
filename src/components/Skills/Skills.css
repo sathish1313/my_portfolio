@@ -1,0 +1,53 @@
+.skills-wrapper {
+    position: relative;
+    height: 500px;
+    text-align: center;
+    color: white;
+ 
+    font-family: 'Outfit', sans-serif;
+  }
+  
+  .skills-title {
+    font-size: 2.8rem;
+    color: white;
+    margin-top: 40px;
+    z-index: 2;
+    position: relative;
+  }
+  
+  .skills-orbit {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 40px;
+    animation: rotate 20s linear infinite;
+  }
+  
+  .skill-icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s;
+  }
+  
+  .skill-icon:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Position each icon around the center */
+  .pos1 { top: 0%; left: 50%; transform: translate(-50%, 0); }
+  .pos2 { top: 20%; left: 85%; transform: translate(-50%, -50%); }
+  .pos3 { top: 50%; left: 100%; transform: translate(-50%, -50%); }
+  .pos4 { top: 80%; left: 85%; transform: translate(-50%, -50%); }
+  .pos5 { bottom: 0%; left: 50%; transform: translate(-50%, 0); }
+  .pos6 { top: 80%; left: 15%; transform: translate(-50%, -50%); }
+  .pos7 { top: 50%; left: 0%; transform: translate(-50%, -50%); }
+  .pos8 { top: 20%; left: 15%; transform: translate(-50%, -50%); }
+  
+  /* Rotation animation */
+  @keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
