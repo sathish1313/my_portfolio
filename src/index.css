@@ -10,3 +10,5 @@ body {
   font-family: 'Outfit', sans-serif;
   overflow-x: hidden; /* optional: to avoid horizontal scroll */
 }
+/* ✅ Fix to ensure background video stays visible across all pages */
+
