@@ -15,7 +15,8 @@
   /* ✅ Mobile: show entire video without cropping */
   @media (max-width: 768px) {
     .background-video {
-      object-fit: contain;       /* show full video, no zoom */
+      object-fit: contain;
+      display:none;       /* show full video, no zoom */
         /* fill gaps if aspect ratio differs */
     }
   }

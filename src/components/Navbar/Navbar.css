@@ -90,4 +90,11 @@
     flex-direction: row-reverse;  /* ✅ Hamburger to right, Like to left */
     gap: 10px;
   }
+  .name{
+    color: #90D5FF;
+  }
+  .like-button{
+    background-color: #90D5FF;
+  }
+  
 }

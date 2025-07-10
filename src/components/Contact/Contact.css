@@ -52,4 +52,9 @@
     transform: scale(1.05);
     box-shadow: 0 0 12px #DA7C25;
   }
+  @media (max-width: 768px){
+    .contact-form button{
+      background: linear-gradient(267deg, #FF474D, #90D5FF);
+    }
+  }
   

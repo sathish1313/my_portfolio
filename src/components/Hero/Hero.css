@@ -98,24 +98,35 @@
 
 .social-icon,
 .social-con {
-  width: 38px;
-  height: 38px;
-  padding: 8px;
+  width: 40px;
+  height: 40px;
+  padding: 4px;
   background-color: #DA7C25;       /* Light orange background */
   border-radius: 50%;              /* Make it circular */
   filter: grayscale(100%) brightness(1.2);
   transition: transform 0.3s ease, filter 0.3s ease;
-  cursor: pointer;
+  cursor: pointer; 
 }
+.social-icon img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; 
+  object-fit: contain;
+  border: 1px solid red;
+}
+
 
 .social-icon:hover,
 .social-con:hover {
-  transform: scale(1.2);
-  filter: brightness(1.2) drop-shadow(0 0 8px #DA7C25);
+  transform: scale(1.1);
+  filter: brightness(1.2) drop-shadow(0 0 6px #DA7C25);
 }
 .social-link:hover .social-icon {
   filter: grayscale(0%) brightness(1);
   transform: scale(1.1);
+}
+.mobile-image{
+  display:none;
 }
 /* 🌐 Responsive layout for mobile screens */
 @media (max-width: 768px) {
@@ -129,6 +140,7 @@
   .hero-text {
     text-align: center;
     max-width: 100%;
+    color: #90D5FF;
   }
 
   .hero-text h1 {
@@ -146,18 +158,24 @@
   .cv-button {
     font-size: 0.9rem;
     padding: 8px 20px;
+    background: linear-gradient(267deg, #FF5B61 0.36%, #4FC3F7 102.06%);
+    box-shadow: 0 5px 15px #4FC3F7;
   }
 
   .hero-image {
     margin-top: 30px;
+    display:none;
   }
 
   .hero-image img {
     width: 220px;
     height: 220px;
-    box-shadow: 0 0 80px 10px #DA7C25;
-
+    box-shadow: none;
+    background-color: transparent;
+    opacity: 1;
   }
+
+  
 
   .socials {
     justify-content: center;
@@ -167,9 +185,9 @@
 
   .social-icon,
   .social-con {
-    width: 30px;
-    height: 30px;
-    padding: 6px;
+    width: 40px;
+    height: 40px;
+    padding: 4px;
     filter: none !important;
     transform: none !important;
   }
@@ -178,6 +196,44 @@
     filter: none !important;
     transform: none !important;
   }
+  .highlight{
+    color:#FF474D;
+  }
+.social-icon,
+.social-con{
+  background-color: #4FC3F7;
+  border-radius: 50%;
 }
 
 
+.mobile-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.mobile-image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  background-color: transparent;
+  box-shadow: none;
+  animation: floatSideToSide 6s ease-in-out infinite;
+  border: 4px solid #4FC3F7;
+}
+
+@keyframes floatSideToSide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px); /* move right */
+  }
+  100% {
+    transform: translateX(0); /* return to center */
+  }
+}
+}

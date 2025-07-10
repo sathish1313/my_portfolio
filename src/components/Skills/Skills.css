@@ -14,6 +14,7 @@
     margin-top: 40px;
     z-index: 2;
     position: relative;
+    
   }
   
   .skills-orbit {
@@ -50,5 +51,24 @@
   @keyframes rotate {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+  }
+  @media (max-width: 768px) {
+    .skills-title {
+      gap: 10px;
+      padding: 0 10px;
+      justify-content: space-around;
+    }
+  
+    .skills-title .skill-icon {
+      width: 60px;      /* or adjust to fit */
+      height: 60px;
+      border-radius: 50%;
+    }
+  
+    .skills-title img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
   }
   

@@ -4,6 +4,7 @@ import photo from '../../assets/your_photo.jpg';
 import linkedin from '../../assets/linkedin.png';
 import github from '../../assets/github.png';
 import insta from '../../assets/insta.jpeg';
+import myphoto from '../../assets/photo.png';
 const Hero = () => {
   return (
     <div className="hero-container" id="Home">
@@ -36,6 +37,10 @@ const Hero = () => {
       <div className="hero-image">
         <img src={photo} alt="Sathish"/>
       </div>
+      <div className="mobile-image">
+        <img src={myphoto} alt="Sathish"/>
+      </div>
+
     </div>
   );
 };
